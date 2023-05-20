@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul{
+	list-style:none;
+	font-size: 20px ;
+}
+.navbar{
+	position:absolute;
+	top: 10px;
+	left:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:20px;
+}
+.navbar-links{
+	display: flex;
+	align-items: center;
+}
+.navbar-links li{
+	margin: 0 20px;
+}
+header{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/marinduque malindig.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-content{
+	text-align: center;
+}
+.header-content h2{
+	font-size: 40px;
+}
+.header-content h1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.menu-btn{
+	position: absolute;
+	top: 30px;
+	right:30px;
+	width: 40px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+}
+section{
+	width: 80% ;
+	margin:100px auto;
+
+}
+.title{
+	text-align: center;
+	font-size: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-right: 10px;
+	justify-content: space-between;
+}
+.row .col{
+    display: flex ;
+    flex-direction: column;
+    align-items: center ;
+}
+.about .row{
+	margin-top: 50px;
+}
+h4{
+	font-size: 20px;
+	margin: 20px auto;
+}
+p{
+	padding: 0px 40px;
+	font-size: 15px;
+}
+.image-gallery img{
+	width: 220px;
+	margin:10px;
+}
+.gallery .image-gallery{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background: lightpink;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.menu-btn{
+		display: block;
+	}
+	.navbar{
+		padding:0;
+	}
+	.logo{
+		position: absolute;
+		top:30px;
+	    left: 30px;
+	}
+	.navbar-links{
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		justify-content: center;
+		background:cadetblue;
+		margin-top: -900px ;
+		transition: all 0.5s ease;
+    }
+    .mobile-menu{
+    	margin-top: 0px;
+    	border-bottom-right-radius: 50%;
+	}
+	.navbar-links li{
+        margin :30px auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.row .col{
+		margin: 20px auto;
+	}
+	.image-gallery img{
+	    justify-content: center;
+	    align-items: center;
+    }
+    .gallery .image-gallery{
+    	width: 90;
+
+
+}

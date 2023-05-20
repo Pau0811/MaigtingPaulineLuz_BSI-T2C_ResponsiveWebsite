@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MARINDUQUE BLOG</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+	<navbar class="navbar">
+		<h1 class="logo"> TRAVEL BLOG</h1>
+		<ul class="navbar-links">
+		   <li><a href="index.html"> HOME</a></li>
+      		<li><a href="about.html"> ABOUT</a></li>
+      		<li><a href="gallery.html"> GALLERY</a></li>
+		</ul>  
+     <img src="img/menu.png" alt="" class="menu-btn">
+	</navbar>
+
+
+      <section class="about"> 
+        <div class="title"> 
+        	<h1> TRAVEL BLOG ABOUT MARINDUQUE</h1>
+         </div> 
+
+      <div class="row">
+      	<div class="col">
+      		<img src="img/map.jpg">
+      		<h4> Marinduque Map</h4>
+      		<p>The province of Marinduque is called "The Heart 
+              of the Philippines". <br> Marinduque had (6) municipalities, eventhough the Marinduque is not too large province. <br> 
+             
+      	</div>
+      	<div class="col">
+      		<img src="img/boac.jpg">
+      		<h4> Main Municipality of Marinduque</h4>
+      		<p> The (6) municipalities of Marinduque are Boac, Mogpog, Sta. Cruz, Torrijos, Buenavista and Gasan. <br> The main municipality is the Boac.</p>
+      </div>
+</section>
+
+
+	<script> 
+         const menuBtn = document.querySelector('.menu-btn')
+         const navbarlinks = document.querySelector('.navbar-links')
+
+         menuBtn.addEventListener('click',()=>(navbarlinks.classList.toggle('mobile-menu')
+         	))
+	</script>
+
+</body>
+</html>
